@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası - Blocksmith</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            font-size: 28px;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 20px;
+            color: #1a1a2e;
+            margin-top: 30px;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #e8e8e8;
+        }
+        p, li {
+            font-size: 15px;
+            color: #444;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        strong { color: #1a1a2e; }
+        .highlight {
+            background: #fff3cd;
+            padding: 14px 18px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+        .contact {
+            background: #e8f4f8;
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔒 Gizlilik Politikası</h1>
+        <p class="subtitle">Blocksmith — Son Güncelleme: 28 Ağustos 2026</p>
+
+        <p>Blocksmith uygulamasını ("Uygulama") kullandığınız için teşekkür ederiz. Gizliliğiniz bizim için önemlidir. Bu politika, Uygulamanın hangi bilgileri topladığını, nasıl kullandığını ve nasıl koruduğunu açıklamaktadır.</p>
+
+        <div class="highlight">
+            <strong>Önemli:</strong> Uygulamamız kişisel olarak tanımlanabilir bilgiler (isim, e-posta, telefon vb.) <strong>istememekte ve saklamamaktadır</strong>. Tüm hesaplar anonim olarak oluşturulmaktadır.
+        </div>
+
+        <h2>1. Toplanan Veriler</h2>
+
+        <h3>1.1 Oturum Kimliği (Anonim Hesap)</h3>
+        <p>Uygulama ilk açılışta otomatik olarak <strong>anonim bir hesap</strong> oluşturur. Bu hesap cihazınıza özel rastgele bir kimlik (UUID) içerir ve size kişisel olarak bağlanamaz. Hesap, Uygulamayı silip yeniden yüklediğinizde sıfırlanır.</p>
+
+        <h3>1.2 Oyun Verileri</h3>
+        <p>Aşağıdaki oyun istatistikleri sunucuda depolanır:</p>
+        <ul>
+            <li>Oyun skoru ve en yüksek skor</li>
+            <li>Toplam oyun sayısı</li>
+            <li>Temizlenen satır sayısı</li>
+            <li>Maksimum kombinasyon</li>
+            <li>Tamamlanan seviye</li>
+            <li>Deneyim puanı (XP) ve seviye</li>
+            <li>Kazanılan rozetler</li>
+        </ul>
+        <p>Bu veriler yalnızca liderlik tablosu ve profil ekranında gösterilir; üçüncü taraflarla paylaşılmaz.</p>
+
+        <h3>1.3 Profil Bilgileri (İsteğe Bağlı)</h3>
+        <p>Kullanıcı isterse şunları manuel olarak ayarlayabilir:</p>
+        <ul>
+            <li>Görünen ad (takma ad)</li>
+            <li>Avatar stili (DiceBear API ile otomatik üretilen, gerçek fotoğraf içermez)</li>
+        </ul>
+        <p>Bu bilgiler isteğe bağlıdır; uygulamayı profil bilgisi girmeden de kullanabilirsiniz.</p>
+
+        <h3>1.4 Arkadaş Listesi</h3>
+        <p>İsteğe bağlı olarak diğer kullanıcıları arkadaş olarak ekleyebilirsiniz. Arkadaşlık sistemi yalnızca anonim kimlikler üzerinden çalışır; gerçek kişi bilgisi içermez.</p>
+
+        <h3>1.5 Yerel Veriler (Cihaz Üzerinde)</h3>
+        <p>Aşağıdaki bilgiler yalnızca cihazınızda saklanır ve sunucuya gönderilmez:</p>
+        <ul>
+            <li>Ses ayarları (sessiz mod)</li>
+            <li>Tema tercihi</li>
+            <li>Oyun son durumu (devam eden oyun)</li>
+        </ul>
+
+        <h3>1.6 Analitik Veriler</h3>
+        <p>Uygulama içi olay kayıtları (örn. oyun sonucu, combo sayısı) Supabase veritabanına kaydedilir. Bu veriler uygulama geliştirme ve hata ayıklama amacıyla kullanılır.</p>
+
+        <h2>2. Üçüncü Taraf Hizmetler</h2>
+        <p>Uygulama aşağıdaki üçüncü taraf hizmetleri kullanır:</p>
+        <ul>
+            <li><strong>Supabase</strong> — Kimlik doğrulama, veritabanı ve gerçek zamanlı bildirimler. (<a href="https://supabase.com/privacy" target="_blank">Gizlilik Politikası</a>)</li>
+            <li><strong>DiceBear</strong> — Profil avatar üretimi (gerçek fotoğraf içermez). (<a href="https://www.dicebear.com/privacy/" target="_blank">Gizlilik Politikası</a>)</li>
+        </ul>
+
+        <h2>3. Verilerin Kullanım Amaçları</h2>
+        <ul>
+            <li>Liderlik tablosu ve sosyal özelliklerin çalıştırılması</li>
+            <li>Oyun istatistiklerinin kaydedilmesi</li>
+            <li>Uygulama performansının iyileştirilmesi</li>
+            <li>Hataların tespit edilmesi ve düzeltilmesi</li>
+        </ul>
+
+        <h2>4. Verilerin Paylaşılması</h2>
+        <p>Toplanan veriler:</p>
+        <ul>
+            <li>Üçüncü taraflara <strong>satılmaz</strong></li>
+            <li>Reklam şirketleriyle <strong>paylaşılmaz</strong></li>
+            <li>Yalnızca kullanıcı tarafından oluşturulan skorlar, isteğe bağlı olarak liderlik tablosunda herkese açık olarak görüntülenir</li>
+        </ul>
+
+        <h2>5. Veri Güvenliği</h2>
+        <p>Verileriniz HTTPS üzerinden şifreli olarak iletilir ve Supabase tarafından güvenli sunucularda barındırılır.</p>
+
+        <h2>6. Çocukların Gizliliği</h2>
+        <p>Uygulama 13 yaşından küçük çocuklardan kasıtlı olarak kişisel bilgi toplamaz. 13 yaşından küçük kullanıcıların ebeveyn gözetiminde kullanmaları önerilir.</p>
+
+        <h2>7. Veri Silme</h2>
+        <p>Uygulamayı cihazınızdan sildiğinizde yerel veriler tamamen silinir. Sunucudaki verilerinizi silmemizi isterseniz aşağıdaki iletişim adresinden bize ulaşabilirsiniz.</p>
+
+        <h2>8. Değişiklikler</h2>
+        <p>Bu gizlilik politikası zaman zaman güncellenebilir. Değişiklikler bu sayfada yayınlanacaktır.</p>
+
+        <div class="contact">
+            <h2>📞 İletişim</h2>
+            <p>Gizlilik politikamız hakkında sorularınız varsa lütfen bizimle iletişime geçin:</p>
+            <p><strong>E-posta:</strong> <a href="mailto:privacy@blocksmith.app">privacy@blocksmith.app</a></p>
+        </div>
+    </div>
+</body>
+</html>
